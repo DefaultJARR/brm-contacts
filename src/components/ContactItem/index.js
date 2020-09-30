@@ -1,12 +1,14 @@
 import React from "react";
+import "./styles.scss";
 
 const ContactItem = (props) => {
-	let contact = props.contact;
+	let { contact, fun } = props;
+
 	return (
-		<li className="contact" key={contact.key}>
+		<li className="contact" onClick={() => fun(contact)} key={contact.key}>
 			<img
 				src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-users-vector-icon-png-image_3725294.jpg"
-				alt="user"
+				alt="contact"
 			/>
 			<div className="contact-info">
 				<p className="contact-name">

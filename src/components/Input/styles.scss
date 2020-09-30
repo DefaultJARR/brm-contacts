@@ -1,0 +1,58 @@
+.input-wrap {
+	position: relative;
+	width: 100%;
+	height: 45px;
+	margin-bottom: 20px;
+}
+
+.input-wrap label {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	font-size: 20px;
+	transition: 300ms all;
+	color: rgba(0, 0, 0, 0.712);
+}
+
+.input-wrap input {
+	width: 100%;
+	height: 100%;
+	padding-top: 15px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+	transition: 500ms all;
+}
+.input-wrap input:focus,
+.input-wrap input:valid, {
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.input-wrap .input-border {
+	width: 0;
+	margin: 0 auto;
+	border-bottom: 2px solid rgb(53, 190, 190);
+	transition: 300ms all;
+}
+
+.input-wrap input:focus + label,
+.input-wrap input:valid + label {
+	transform: translateY(-20px);
+	font-size: 13px;
+	color: rgb(53, 190, 190);
+}
+
+.input-wrap input:focus + label + .input-border,
+.input-wrap input:valid + label + .input-border {
+	width: 100%;
+}
+
+// 
+input[type="date"] {
+	color: white;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+	color: black;
+}

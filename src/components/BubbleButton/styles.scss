@@ -1,0 +1,29 @@
+
+.bubble-btn {
+	$size: 55px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: $size;
+	height: $size;
+	float: right;
+	padding: 20px;
+	z-index: 1;
+	background-color: rgb(7, 211, 211);
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+	color: white;
+	font-size: 40px;
+	overflow: hidden;
+	transition: 300ms all;
+	cursor: pointer;
+}
+
+.bubble-btn:hover {
+	transform: scale(1.1) translateY(-10px);
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}

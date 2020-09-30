@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./styles.scss";
 
+// Components
 import ContactsList from './pages/ContactsList'
 import Contact from './pages/Contact'
 
